@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moodsense Sleep Log Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <button class="cancel">Back</button>
+            <h2 class="app-name">Moodsense</h2>
+            <button class="save">Save</button>
+        </nav>
+        <h1 class="prompt">Sleep Log</h1>
+        <form>
+            <div class="date">
+                <label>Date</label>
+                <input type="date" />
+            </div>
+            <hr>
+            <div class="sleep-hours">
+                <label>Hours of Sleep</label>
+                <input type="number" />
+            </div>
+            <hr>
+            <div class="sleep-quality">
+                <label>Quality</label>
+                <p class="italic">1 (poor) - 5 (excellent)</p>
+                <ul class="quality">
+                    <li><input type="radio" name="quality" />
+                        <p class="descriptior">1</p>
+                    </li>
+                    <li><input type="radio" name="quality" />
+                        <p class="descriptior">2</p>
+                    </li>
+                    <li><input type="radio" name="quality" />
+                        <p class="descriptior">3</p>
+                    </li>
+                    <li><input type="radio" name="quality" />
+                        <p class="descriptior">4</p>
+                    </li>
+                    <li><input type="radio" name="quality" />
+                        <p class="descriptior">5</p>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <div class="sleep-activity">
+            <p>List recent sleep activity by date here</p>
+            <p>Can edit, delete, and view from this list</p>
+        </div>
+    </div>
+</body>
+
+</html>

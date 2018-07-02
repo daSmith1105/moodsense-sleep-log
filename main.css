@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40px repeat(10, 1fr);
+    justify-content: center;
+}
+
+nav {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.cancel {
+    float: left;
+    font-size: 90%;
+    margin-left: .5em;
+    padding: .7em;
+    height: 100%;
+    border: none;
+    background-color: lightgrey;
+}
+
+.save {
+    float: right;
+    font-size: 90%;
+    margin-right: .5em;
+    padding: .7em;
+    height: 100%;
+    border: none;
+    background-color: lightgrey;
+}
+
+.app-name {
+    font-size: 120%;
+    display: inline-block;
+    margin-top: .25em;
+}
+
+.prompt {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    margin-top: .5em;
+}
+
+form {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+hr {
+    margin-bottom: 1em;
+}
+
+input {
+    width: 50%;
+    border: none;
+    padding: .5em;
+}
+
+.quality li {
+    display: inline-block;
+    margin: 1em;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 70%;
+    margin-top: .25em;
+}
+
+.sleep-activity {
+    height: 30vh;
+    width: 100%;
+    border: 1px solid lightgrey;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.descriptor {
+    display: block;
+}
+
+button:hover {
+    cursor: pointer;
+}
